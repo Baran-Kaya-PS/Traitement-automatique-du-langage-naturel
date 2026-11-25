@@ -1,3 +1,7 @@
+# Traitement automatique du langage naturel : sous-titres de séries
+
+Chaîne de traitement Python qui transforme les sous-titres de séries TV en vecteurs TF-IDF. Ces vecteurs alimentent le [moteur de recherche et de recommandation](https://github.com/Baran-Kaya-PS/Moteur-de-recherche-et-de-recommandation). Projet de BUT3 Informatique (2023-2024), réalisé avec [@SpottyShadow](https://github.com/SpottyShadow).
+
 ## Sommaire
 1. [Introduction](#introduction)
 2. [Installation et Configuration](#installation-et-configuration)
@@ -16,6 +20,7 @@ Cette suite de scripts est conçue pour le traitement, la tokenisation, et l'ana
 
 - Prérequis : Python 3.10, NLTK, Scikit-learn
 - Installation : `pip install nltk scikit-learn`
+- Clés TMDB (uniquement pour `API_calls.py`, qui récupère les mots-clés des séries) : copier `.env.example` et renseigner `TMDB_API_KEY` et `TMDB_ACCESS_TOKEN` dans l'environnement.
 - Configuration : Assurez-vous que les chemins des fichiers dans les scripts sont correctement configurés selon votre structure de répertoire.
 
 ### Cleaner_obj.py
