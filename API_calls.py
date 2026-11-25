@@ -1,9 +1,10 @@
+import os
 import requests
 import json
 
-# Vos configurations
-API_KEY = "172303ab8e417bb8d39940995feb9d0b"
-ACCESS_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNzIzMDNhYjhlNDE3YmI4ZDM5OTQwOTk1ZmViOWQwYiIsInN1YiI6IjY1MzdhMjgzZjQ5NWVlMDBjNTE2NGFlOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.YjIjKrLFRgKKj6TM3clDOScd26GS622poDHzhaF31uI"
+# Configuration : clés TMDB lues dans les variables d'environnement (voir .env.example)
+API_KEY = os.environ.get("TMDB_API_KEY", "")
+ACCESS_TOKEN = os.environ.get("TMDB_ACCESS_TOKEN", "")
 BASE_URL = "https://api.themoviedb.org/3"
 
 # Liste de vos séries
